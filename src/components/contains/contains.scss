@@ -1,0 +1,127 @@
+@import './src/css/variabilities';
+
+.contains {
+  h3 {
+    @media (max-width: 1300px) {
+      margin: 20px 0;
+    }
+  }
+  h4 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .policarb, .metal, .control {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 10px;
+    margin: 80px 0;
+
+    @media (max-width: 1300px) {
+      margin: 40px 0;
+    }
+
+
+    img{
+      width: 30%;
+      margin: 10px;
+    }
+    p {
+      width: 55%;
+      text-align: center;
+      font-size: 16px;
+      @media (max-width: 607px) {
+        width: 85%;
+      }
+    }
+  }
+
+  .policarb_colors, .metal_colors{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
+
+
+    .color-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 350px;
+
+    }
+  }
+
+  .color {
+    width: 350px;
+    height: 250px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+    @media (max-width: 350px) {
+      width: 300px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+      border-radius: 5px;
+      transition: all 0.5s ease;
+    }
+    img:hover {
+      transform: scale(1.25);
+      transition: all 0.5s ease;
+    }
+  }
+  .ral {
+    text-align: center;
+  }
+
+  .basic {
+    width: 250px;
+    height: 200px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+      border-radius: 5px;
+      margin: 0;
+    }
+  }
+
+  .extra{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    text-align: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      background: #66928e;
+      padding: 10px;
+      border-radius: 5px;
+      color: white;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 51%;
+        margin-bottom: 10px;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+}

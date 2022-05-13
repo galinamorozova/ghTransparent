@@ -1,0 +1,65 @@
+@import './src/css/variabilities';
+
+
+.burger {
+  @media (min-width: 1020px) {
+    display: none;
+  }
+
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
+
+  .first-line {
+
+    &.active {
+      transform: rotate(45deg);
+      position: fixed;
+      top:2%;
+      @media (max-width: 600px) {
+        top:1.5%;
+      }
+
+    }
+  }
+  .second-line {
+
+    &.active {
+      transform: rotate(135deg);
+      position: fixed;
+      top:2%;
+      @media (max-width: 600px) {
+        top:1.5%;
+      }
+
+    }
+  }
+  .empty-line {
+
+    &.active {
+      display: none;
+    }
+  }
+
+  .burger-btn {
+    div {
+      border: 1.5px solid white;
+      background-color: white;
+      width: 2.1rem;
+      margin-bottom: 0.4rem;
+      padding: 0;
+
+      @media (max-width: 370px) {
+        width: 1.5rem;
+        margin-bottom: 0.25rem;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,52 @@
+@import './src/css/variabilities';
+
+.howToWork {
+  margin-bottom: 50px;
+  padding-right: 5px;
+  @media (max-width: 870px) {
+    margin-bottom: 70px;
+  }
+
+  .scheme {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 2%;
+    @media (max-width: 740px) {
+      grid-gap: 10px;
+    }
+    @media (max-width: 370px) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    p {
+      width: 80%;
+      font-size: 20px;
+      text-align:justify;
+      @media (max-width: 870px) {
+        font-size: 17px;
+      }
+    }
+    img {
+      width: 50px;
+      margin: 0 30px;
+      @media (max-width: 460px) {
+        width: 35px;
+      }
+    }
+    img[alt="arrow"] {
+      @media (max-width: 460px) {
+        width: 35px;
+      }
+    }
+    div {
+      display: flex;
+      align-items: center;
+      padding: 40px 0px;
+      @media (max-width: 870px) {
+        padding: 20px 0px;
+      }
+    }
+  }
+}

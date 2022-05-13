@@ -1,0 +1,169 @@
+@import './src/css/variabilities';
+
+.prices {
+  background: #66928e;
+  margin: 50px 0;
+  padding: 0 10px 20px 10px;
+
+  .submitButton {
+    margin-bottom: 40px;
+    padding: 13px 36px;
+    span{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #393939;
+    }
+  }
+  & .disabled {
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+    color: #393939;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    padding: 0 7px;
+
+  }
+
+  p{
+    text-align: center;
+    color: white;
+    width: 70%;
+    margin: 0 auto 40px;
+    @media (max-width: 770px) {
+      width: 90%;
+    }
+    @media (max-width: 640px) {
+      margin: 0 auto 20px;
+    }
+
+  }
+  h3 {
+    color: white;
+    @media (max-width: 770px) {
+      margin: 20px;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .findPrice {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    @media (max-width: 770px) {
+      width: 70%;
+    }
+  }
+  input {
+    margin-bottom: 5px;
+    height: 40px;
+  }
+  textarea {
+    height: 130px;
+  }
+  label{
+    display: flex;
+    align-items: center;
+    color: white;
+    input {
+      margin-right: 5px;
+    }
+  }
+
+  .works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    justify-items: center;
+    grid-gap: 4%;
+    margin-bottom: 16%;
+    @media (max-width: 1200px) {
+      grid-gap: 3%;
+    }
+    @media (max-width: 988px) {
+      margin-bottom: 300px;
+    }
+    @media (max-width: 648px) {
+      grid-gap: 1.8%;
+    }
+    @media (max-width: 640px) {
+      grid-gap: 1.5%;
+      margin-bottom: 450px;
+    }
+  }
+
+
+
+  .slick-slider {
+    width: 70%;
+    p{
+      margin: 5px 0;
+      @media (max-width: 648px) {
+        margin: 5px 0 0 0;
+      }
+    }
+  }
+
+
+  .slick-sliderrractive {
+    position: fixed;
+    top:5vh;
+    left: 15vw;
+    z-index: 10;
+    .picture {
+      width: 70vw;
+      height: 70vh;
+    }
+  }
+
+  .pictureContainer {
+    width: inherit;
+  }
+
+  .picture {
+    height: 250px;
+    width: inherit;
+    object-fit:contain;
+  }
+  .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      //text-align: left;
+      span{
+        font-weight: bold;
+        text-transform:uppercase;
+      }
+    }
+  }
+
+  .slick-dots li{
+    @media (max-width: 1125px) {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .slick-dots li button{
+    background-color: white;
+    @media (max-width: 1125px) {
+      width: 10px;
+      height: 10px;
+    }
+    &:before {
+      width: 20px;
+      height: 20px;
+      top: 0;
+      @media (max-width: 1125px) {
+        width: 10px;
+        height: 10px;
+        top: -4px;
+      }
+    }
+  }
+
+}

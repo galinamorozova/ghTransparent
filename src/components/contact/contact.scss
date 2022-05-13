@@ -1,0 +1,45 @@
+@import './src/css/variabilities';
+
+
+.contact {
+  background-color: #66928e;
+  margin-top: 30px;
+  padding: 20px;
+
+
+  @media (max-width: 700px) {
+    padding: 0px;
+  }
+
+  a, p, h4 {
+    color: white;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 750px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .map {
+      width: 60%;
+      @media (max-width: 750px) {
+        width: 70%;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 600px) {
+        width: 80%;
+      }
+    }
+  }
+  img {
+    width: 15px;
+    margin: 10px 7px 10px 0;
+  }
+
+  .contacts {
+    display: flex;
+    align-items: center;
+  }
+}
