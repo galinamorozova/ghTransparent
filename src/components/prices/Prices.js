@@ -2,49 +2,48 @@ import './prices.scss';
 import {React, useContext, useEffect, useState, useRef} from "react";
 import Slider from "react-slick";
 import StoreContext from "../context";
-import pleh1 from './../../images/1pleh.jpg';
-import pleh2 from './../../images/2pleh.jpg';
-import pleh3 from './../../images/3pleh.jpg';
-import pleh4 from './../../images/4pleh.jpg';
-import pervoz1 from './../../images/1perv.jpg';
-import pervoz2 from './../../images/2perv.jpg';
-import pervoz3 from './../../images/3perv.jpg';
-import pervoz4 from './../../images/4perv.jpg';
-import pervoz5 from './../../images/5perv.jpg';
-import pervoz6 from './../../images/6perv.jpg';
-import pervoz7 from './../../images/7perv.jpg';
-import pervoz8 from './../../images/8perv.jpg';
-import hlev1 from './../../images/1hlev.jpg';
-import hlev2 from './../../images/2hlev.jpg';
-import hlev3 from './../../images/3hlev.jpg';
-import hlev4 from './../../images/4hlev.jpg';
-import novo1 from './../../images/1novovor.jpg';
-import novo2 from './../../images/2novovor.jpg';
-import novo3 from './../../images/3novovor.jpg';
-import novo4 from './../../images/4novovor.jpg';
-import novo5 from './../../images/5novovor.jpg';
-import novo6 from './../../images/6novovor.jpg';
-import bob1 from './../../images/1bob.jpg';
-import bob2 from './../../images/2bob.jpg';
-import bob3 from './../../images/3bob.jpg';
-import bob4 from './../../images/4bob.jpg';
-import nel1 from './../../images/1nelzh.jpg';
-import nel2 from './../../images/2nelzh.jpg';
-import nel3 from './../../images/3nelzh.jpg';
-import nel4 from './../../images/4nelzh.jpg';
-import mal1 from './../../images/1maly.jpg';
-import mal2 from './../../images/2maly.jpg';
-import mal3 from './../../images/3maly.jpg';
-import med1 from './../../images/1med.jpg';
-import med2 from './../../images/2med.jpg';
-import rep1 from "./../../images/1.jpeg"
-import rep2 from './../../images/2.jpeg';
-import rep3 from './../../images/3.jpeg';
-import rep6 from './../../images/6.jpeg';
-import rep7 from './../../images/7.jpeg';
-import rep8 from './../../images/8.jpeg';
-import rep9 from './../../images/9.jpeg';
-import rep10 from './../../images/10.jpeg';
+// import pleh1 from './../../images/1pleh.webp';
+// import pleh2 from './../../images/2pleh.webp';
+// import pleh3 from './../../images/3pleh.webp';
+// import pleh4 from './../../images/4pleh.webp';
+// import pervoz1 from './../../images/1perv.webp';
+// import pervoz2 from './../../images/2perv.webp';
+// import pervoz3 from './../../images/3perv.webp';
+// import pervoz4 from './../../images/4perv.webp';
+// import pervoz5 from './../../images/5perv.webp';
+// import pervoz6 from './../../images/6perv.webp';
+// import pervoz7 from './../../images/7perv.webp';
+// import pervoz8 from './../../images/8perv.webp';
+// import hlev1 from './../../images/1hlev.webp';
+// import hlev2 from './../../images/2hlev.webp';
+// import hlev3 from './../../images/3hlev.webp';
+// import hlev4 from './../../images/4hlev.webp';
+// import novo1 from './../../images/1novovor.webp';
+// import novo2 from './../../images/2novovor.webp';
+// import novo3 from './../../images/3novovor.webp';
+// import novo4 from './../../images/4novovor.webp';
+// import novo5 from './../../images/5novovor.webp';
+// import novo6 from './../../images/6novovor.webp';
+// import bob1 from './../../images/1bob.webp';
+// import bob2 from './../../images/2bob.webp';
+// import bob3 from './../../images/3bob.webp';
+// import bob4 from './../../images/4bob.webp';
+// import nel1 from './../../images/1nelzh.webp';
+// import nel2 from './../../images/2nelzh.webp';
+// import nel3 from './../../images/3nelzh.webp';
+// import nel4 from './../../images/4nelzh.webp';
+// import mal1 from './../../images/1maly.webp';
+// import mal2 from './../../images/2maly.webp';
+// import mal3 from './../../images/3maly.webp';
+// import med1 from './../../images/1med.webp';
+// import med2 from './../../images/2med.webp';
+// import rep1 from "./../../images/1.webp"
+// import rep2 from './../../images/2.webp';
+// import rep6 from './../../images/6.webp';
+// import rep7 from './../../images/7.webp';
+// import rep8 from './../../images/8.webp';
+// import rep9 from './../../images/9.webp';
+// import rep10 from './../../images/10.webp';
 import emailjs from "@emailjs/browser";
 import OrdinaryCircleLoader from "../loader/Loader";
 
@@ -105,122 +104,133 @@ const ExampleSlider = ({props}) => {
     </Slider>
 }
 
-// const images1 = [
-//     {src: "https://i.ibb.co/hCqvwk0/1pleh.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/GRsZvSr/2pleh.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/8xB8Zt7/3pleh.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/xqmCVQn/4pleh.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-// ]
-
 const images1 = [
-    {src: `${pleh1}`, year: "2021", size: "19,9 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "275 тыс. руб."},
-    {src: `${pleh2}`, year: "2021", size: "19,9 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "275 тыс. руб."},
-    {src: `${pleh3}`, year: "2021", size: "19,9 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "275 тыс. руб."},
-    {src: `${pleh4}`, year: "2021", size: "19,9 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "275 тыс. руб."},
+    {src: "https://i.ibb.co/9tHfFYR/1pleh.webp", year: "2021", size: "19,9 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "275 тыс. руб."},
+    {src: "https://i.ibb.co/xDwytND/2pleh.webp", year: "2021", size: "19,9 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "275 тыс. руб."},
+    {src: "https://i.ibb.co/QFNFHqZ/3pleh.webp", year: "2021", size: "19,9 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "275 тыс. руб."},
+    {src: "https://i.ibb.co/f2MZ6JX/4pleh.webp", year: "2021", size: "19,9 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "275 тыс. руб."},
 ]
-// const images2 = [
-//     {src: "https://i.ibb.co/6wF3Sy8/1perv.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/wNKPynp/2perv.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/z8QFXsT/3perv.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/ZXQjTQN/4perv.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/XVsPGgx/5perv.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/PFjSs6z/6perv.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/5YH1R1h/7perv.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/Nr6BzpY/8perv.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
+
+// const images1 = [
+//     {src: `${pleh1}`, year: "2021", size: "19,9 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "275 тыс. руб."},
+//     {src: `${pleh2}`, year: "2021", size: "19,9 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "275 тыс. руб."},
+//     {src: `${pleh3}`, year: "2021", size: "19,9 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "275 тыс. руб."},
+//     {src: `${pleh4}`, year: "2021", size: "19,9 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "275 тыс. руб."},
 // ]
 const images2 = [
-    {src: `${pervoz1}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
-    {src: `${pervoz2}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
-    {src: `${pervoz3}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
-    {src: `${pervoz4}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
-    {src: `${pervoz5}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
-    {src: `${pervoz6}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
-    {src: `${pervoz7}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
-    {src: `${pervoz8}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+    {src: "https://i.ibb.co/9YtD2PM/1perv.webp", year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+    {src: "https://i.ibb.co/1KTxQNs/2perv.webp", year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+    {src: "https://i.ibb.co/dMyznWf/3perv.webp", year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+    {src: "https://i.ibb.co/gPPtRwZ/4perv.webp", year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+    {src: "https://i.ibb.co/KzvWxFd/5perv.webp", year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+    {src: "https://i.ibb.co/M5QDFrd/6perv.webp", year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+    {src: "https://i.ibb.co/gPSm6m8/7perv.webp", year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+    {src: "https://i.ibb.co/GkrPJB0/8perv.webp", year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
 ]
-// const images3 = [
-//     {src: "https://i.ibb.co/4TMMSCt/1hlev.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/0r02zL4/2hlev.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/0Jwywf9/3hlev.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/vDB7k1k/4hlev.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     ]
+// const images2 = [
+//     {src: `${pervoz1}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+//     {src: `${pervoz2}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+//     {src: `${pervoz3}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+//     {src: `${pervoz4}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+//     {src: `${pervoz5}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+//     {src: `${pervoz6}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+//     {src: `${pervoz7}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+//     {src: `${pervoz8}`, year: "2021", size: "16,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price:"240 тыс. руб."},
+// ]
 const images3 = [
-    {src: `${hlev1}`, year: "2021", size: "11,5 кв.м.", colorP: "прозрачный", colorM: "коричный", addition: "автоматика, клавиши открывания, блок аварийного открывания", price: "180 тыс. руб."},
-    {src: `${hlev2}`, year: "2021", size: "11,5 кв.м.", colorP: "прозрачный", colorM: "коричный", addition: "автоматика, клавиши открывания, блок аварийного открывания", price: "180 тыс. руб."},
-    {src: `${hlev3}`, year: "2021", size: "11,5 кв.м.", colorP: "прозрачный", colorM: "коричный", addition: "автоматика, клавиши открывания, блок аварийного открывания", price: "180 тыс. руб."},
-    {src: `${hlev4}`, year: "2021", size: "11,5 кв.м.", colorP: "прозрачный", colorM: "коричный", addition: "автоматика, клавиши открывания, блок аварийного открывания", price: "180 тыс. руб."},
-]
-// const images4 = [
-//     {src: "https://i.ibb.co/7VHFdt5/1novovor.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/hB1RQcP/2novovor.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/166t2vq/3novovor.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/nC9W029/4novovor.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/gW1yX8M/5novovor.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/7bmwp33/6novovor.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     ]
+    {src: "https://i.ibb.co/0ZWpNNj/1hlev.webp", year: "2021", size: "11,5 кв.м.", colorP: "прозрачный", colorM: "коричный", addition: "автоматика, клавиши открывания, блок аварийного открывания", price: "180 тыс. руб."},
+    {src: "https://i.ibb.co/nfrsppt/2hlev.webp", year: "2021", size: "11,5 кв.м.", colorP: "прозрачный", colorM: "коричный", addition: "автоматика, клавиши открывания, блок аварийного открывания", price: "180 тыс. руб."},
+    {src: "https://i.ibb.co/Dwf6M46/3hlev.webp", year: "2021", size: "11,5 кв.м.", colorP: "прозрачный", colorM: "коричный", addition: "автоматика, клавиши открывания, блок аварийного открывания", price: "180 тыс. руб."},
+    {src: "https://i.ibb.co/LdWCDDM/4hlev.webp", year: "2021", size: "11,5 кв.м.", colorP: "прозрачный", colorM: "коричный", addition: "автоматика, клавиши открывания, блок аварийного открывания", price: "180 тыс. руб."},
+    ]
+// const images3 = [
+//     {src: `${hlev1}`, year: "2021", size: "11,5 кв.м.", colorP: "прозрачный", colorM: "коричный", addition: "автоматика, клавиши открывания, блок аварийного открывания", price: "180 тыс. руб."},
+//     {src: `${hlev2}`, year: "2021", size: "11,5 кв.м.", colorP: "прозрачный", colorM: "коричный", addition: "автоматика, клавиши открывания, блок аварийного открывания", price: "180 тыс. руб."},
+//     {src: `${hlev3}`, year: "2021", size: "11,5 кв.м.", colorP: "прозрачный", colorM: "коричный", addition: "автоматика, клавиши открывания, блок аварийного открывания", price: "180 тыс. руб."},
+//     {src: `${hlev4}`, year: "2021", size: "11,5 кв.м.", colorP: "прозрачный", colorM: "коричный", addition: "автоматика, клавиши открывания, блок аварийного открывания", price: "180 тыс. руб."},
+// ]
 const images4 = [
-    {src: `${novo1}`, year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
-    {src: `${novo2}`, year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
-    {src: `${novo3}`, year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
-    {src: `${novo4}`, year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
-    {src: `${novo5}`, year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
-    {src: `${novo6}`, year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
-]
+    {src: "https://i.ibb.co/mBLWhQK/1novovor.webp", year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
+    {src: "https://i.ibb.co/tp7Lk8b/2novovor.webp", year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
+    {src: "https://i.ibb.co/qmHHSn9/3novovor.webp", year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
+    {src: "https://i.ibb.co/wJ4SHRZ/4novovor.webp", year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
+    {src: "https://i.ibb.co/3MrHhKc/5novovor.webp", year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
+    {src: "https://i.ibb.co/3kN3PZr/6novovor.webp", year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
+    ]
+// const images4 = [
+//     {src: `${novo1}`, year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
+//     {src: `${novo2}`, year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
+//     {src: `${novo3}`, year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
+//     {src: `${novo4}`, year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
+//     {src: `${novo5}`, year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
+//     {src: `${novo6}`, year: "2020", size: "12,48 кв.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания, аварийное открывание", price: "185 тыс. руб."},
+// ]
 
-// const images5 = [
-//     {src: "https://i.ibb.co/tszBDzj/1bob.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/2W5xkyY/2bob.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/Vj8mRqP/3bob.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/y4WyT5D/4bob.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     ]
 const images5 = [
-    {src: `${bob1}`, year: "2020", size: "24,14 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты", price: "225 тыс. руб."},
-    {src: `${bob2}`, year: "2020", size: "24,14 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты", price: "225 тыс. руб."},
-    {src: `${bob3}`, year: "2020", size: "24,14 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты", price: "225 тыс. руб."},
-    {src: `${bob4}`, year: "2020", size: "24,14 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты", price: "225 тыс. руб."},
-]
-// const images6 = [
-//     {src: "https://i.ibb.co/3dtBnv7/1nelzh.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/C5jMYyg/2nelzh.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/1sGsF5N/3nelzh.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/T0BbLrN/4nelzh.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     ]
+    {src: "https://i.ibb.co/dcM02QQ/1bob.webp", year: "2020", size: "24,14 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты", price: "225 тыс. руб."},
+    {src: "https://i.ibb.co/8PvTjmG/2bob.webp", year: "2020", size: "24,14 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты", price: "225 тыс. руб."},
+    {src: "https://i.ibb.co/hMtdJ4N/3bob.webp", year: "2020", size: "24,14 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты", price: "225 тыс. руб."},
+    {src: "https://i.ibb.co/DWRzWjX/4bob.webp", year: "2020", size: "24,14 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты", price: "225 тыс. руб."},
+    ]
+// const images5 = [
+//     {src: `${bob1}`, year: "2020", size: "24,14 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты", price: "225 тыс. руб."},
+//     {src: `${bob2}`, year: "2020", size: "24,14 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты", price: "225 тыс. руб."},
+//     {src: `${bob3}`, year: "2020", size: "24,14 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты", price: "225 тыс. руб."},
+//     {src: `${bob4}`, year: "2020", size: "24,14 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты", price: "225 тыс. руб."},
+// ]
 const images6 = [
-    {src: `${nel1}`, year: "2022", size: "15,3 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания", price: "228,6 тыс. руб."},
-    {src: `${nel2}`, year: "2022", size: "15,3 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания", price: "228,6 тыс. руб."},
-    {src: `${nel3}`, year: "2022", size: "15,3 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания", price: "228,6 тыс. руб."},
-    {src: `${nel4}`, year: "2022", size: "15,3 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания", price: "228,6 тыс. руб."},
-]
-
-// const images7 = [
-//     {src: "https://i.ibb.co/FHRyypb/1maly.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/z5XjvwN/2maly.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/n10F9RZ/3maly.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     ]
+    {src: "https://i.ibb.co/5sCYWJM/1nelzh.webp", year: "2022", size: "15,3 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания", price: "228,6 тыс. руб."},
+    {src: "https://i.ibb.co/QngKbN5/2nelzh.webp", year: "2022", size: "15,3 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания", price: "228,6 тыс. руб."},
+    {src: "https://i.ibb.co/pLxWtgp/3nelzh.webp", year: "2022", size: "15,3 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания", price: "228,6 тыс. руб."},
+    {src: "https://i.ibb.co/c6nyB9Z/4nelzh.webp", year: "2022", size: "15,3 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания", price: "228,6 тыс. руб."},
+    ]
+// const images6 = [
+//     {src: `${nel1}`, year: "2022", size: "15,3 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания", price: "228,6 тыс. руб."},
+//     {src: `${nel2}`, year: "2022", size: "15,3 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания", price: "228,6 тыс. руб."},
+//     {src: `${nel3}`, year: "2022", size: "15,3 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания", price: "228,6 тыс. руб."},
+//     {src: `${nel4}`, year: "2022", size: "15,3 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, клавиши открывания", price: "228,6 тыс. руб."},
+// ]
 
 const images7 = [
-    {src: `${mal1}`, year: "2022", size: "24,2 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "340 тыс. руб."},
-    {src: `${mal2}`, year: "2022", size: "24,2 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "340 тыс. руб."},
-    {src: `${mal3}`, year: "2022", size: "24,2 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "340 тыс. руб."},
-]
+    {src: "https://i.ibb.co/2sqVjTw/1maly.webp", year: "2022", size: "24,2 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "340 тыс. руб."},
+    {src: "https://i.ibb.co/993cNLq/2maly.webp", year: "2022", size: "24,2 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "340 тыс. руб."},
+    {src: "https://i.ibb.co/SnLrtx4/3maly.webp", year: "2022", size: "24,2 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "340 тыс. руб."},
+    ]
 
-// const images8 = [
-//     {src: "https://i.ibb.co/t4ztF0r/1med.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     {src: "https://i.ibb.co/Qk0N9zz/2med.jpg", year: "", size: "", colorP: "", colorM: "", addition: ""},
-//     ]
+// const images7 = [
+//     {src: `${mal1}`, year: "2022", size: "24,2 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "340 тыс. руб."},
+//     {src: `${mal2}`, year: "2022", size: "24,2 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "340 тыс. руб."},
+//     {src: `${mal3}`, year: "2022", size: "24,2 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "340 тыс. руб."},
+// ]
+
 const images8 = [
-    {src: `${med1}`, year: "2021", size: "17,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "199 тыс.руб."},
-    {src: `${med2}`, year: "2021", size: "17,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "199 тыс.руб."},
-]
+    {src: "https://i.ibb.co/frHWjD2/1med.webp", year: "2021", size: "17,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "199 тыс.руб."},
+    {src: "https://i.ibb.co/Xt3Gdms/2med.webp", year: "2021", size: "17,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "199 тыс.руб."},
+    ]
+// const images8 = [
+//     {src: `${med1}`, year: "2021", size: "17,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "199 тыс.руб."},
+//     {src: `${med2}`, year: "2021", size: "17,1 кв.м.", colorP: "прозрачный", colorM: "коричневый", addition: "автоматика, пульты, блок аварийного открывания", price: "199 тыс.руб."},
+// ]
+
+// const images9 = [
+//     {src: `${rep1}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+//     {src: `${rep2}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+//     {src: `${rep7}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+//     {src: `${rep6}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+//     {src: `${rep8}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+//     {src: `${rep9}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+//     {src: `${rep10}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+// ]
 
 const images9 = [
-    {src: `${rep1}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
-    {src: `${rep2}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
-    {src: `${rep3}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
-    {src: `${rep6}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
-    {src: `${rep8}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
-    {src: `${rep9}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
-    {src: `${rep10}`, year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+    {src: "https://i.ibb.co/yP9LSRW/1.webp", year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+    {src: "https://i.ibb.co/YkvZyq8/2.webp", year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+    {src: "https://i.ibb.co/CVXTD9S/6.webp", year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+    {src: "https://i.ibb.co/vk8Gc3b/7.webp", year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+    {src: "https://i.ibb.co/VgbvJvH/8.webp", year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+    {src: "https://i.ibb.co/9rkws65/9.webp", year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+    {src: "https://i.ibb.co/bK6tCNb/10.webp", year: "2022", size: "27,33 кв.м.", colorP: "прозрачный", colorM: "антрацит", addition: "автоматика, пульты, блок аварийного открывания", price: "420 тыс.руб."},
+
 ]
 
 export const changeEventHandlerDecorator = (fn) => {

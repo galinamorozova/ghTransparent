@@ -116,6 +116,13 @@
     .picture {
       width: 70vw;
       height: 70vh;
+
+      @media (orientation:portrait) {
+        height: 53vh;
+      }
+      @media (orientation:landscape) {
+        height: 85vh;
+      }
     }
   }
 
